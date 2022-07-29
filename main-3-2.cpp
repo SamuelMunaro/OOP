@@ -9,7 +9,7 @@ using namespace std;
 extern int median_array(int[], int);
 
 int main() {
-  int array[5] = {1, 2, 3, 5, 4};
+  int array[5] = {1, 1, 1, 6, 1};
 
     cout << "the median is: " << median_array(array, 5) << endl;
 

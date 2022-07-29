@@ -2,7 +2,7 @@
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int is_descending(int[], int);
+extern bool is_descending(int[], int);
 
 int main() {
   int array[5] = {5, 4, 3, 2, 1};
