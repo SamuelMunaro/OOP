@@ -8,14 +8,5 @@ int descending = true;
     }
   }
 
-    switch (descending){
-        case true:
-        std::cout << "It is in descending order" << std::endl;
-        break;
-        case false:
-        std::cout << "It is not in descending order" << std::endl;
-        break;
-    }
-
   return descending;
 }

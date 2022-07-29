@@ -2,10 +2,10 @@
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int average(int[], int);
+extern int double array_mean(int[], int);
 
 int main() {
   int array[5] = {1, 1, 1, 1, 1};
-  std::cout << "The average is: " << average(array, 5) << std::endl;
+  std::cout << "The average is: " << double array_mean(array, 5) << std::endl;
   return 0;
 }
