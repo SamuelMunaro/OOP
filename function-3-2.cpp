@@ -2,7 +2,7 @@
 #include <iostream>
 #include <algorithm>
 
-int median(int array[], int n){
+int median_array(int array[], int n){
     int number=0;
     int median=0;
     for(int i = 0; i < n; i++){
