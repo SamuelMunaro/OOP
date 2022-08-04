@@ -1,11 +1,28 @@
 #include <iostream>
+#include <array>
+using namespace std;
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern double array_mean(int[], int);
+
+extern int sum_diagonal(int[10][10]);
 
 int main() {
-  int array[5] = {1, 2, 3, 4, 5};
-  std::cout << "The average is: " << array_mean(array, 5) << std::endl;
-  return 0;
-}
+
+    int array[10][10] = {};
+
+    for (int i = 0; i < 10; i++) {
+
+        for (int j = 0; j < 10; j++) {
+
+            if (i == j) {
+                array[i][j] = 1;
+            }
+
+        }
+    }
+
+    cout << "is signature array? " << sum_diagonal(array) << endl;
+
+    return 0;
+} 

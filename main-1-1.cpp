@@ -1,11 +1,17 @@
 #include <iostream>
+#include <array>
+using namespace std;
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int array_sum(int[], int);
+
+extern int sum_diagonal(int[4][4]);
 
 int main() {
-  int array[5] = {4, 5, 6, 7, 8};
-  std::cout << "The sum is: " << array_sum(array, 5) << std::endl;
-  return 0;
-}
+
+    int array[4][4] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,1 ,1 ,1 ,1};
+
+    cout << "the sum of array is: " << sum_diagonal(array) << endl;
+
+    return 0;
+} 

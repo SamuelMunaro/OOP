@@ -1,11 +1,21 @@
+#include <math.h>
 #include <iostream>
 
-double array_mean(int array[], int n){
-  double sum = 0;
-  double average = 0;
-  for (int i = 0; i < n; i++) {
-    sum = sum + array[i];
-  }
-  average = sum / n;
-  return average;
+int sum_diagonal(int array[10][10]) {
+
+    int identity = 0;
+    
+    for (int i = 0; i < 10; i++) {
+
+        for (int j = 0; j < 10; j++) {
+
+            if ((i == j && array[i][j] == 1) && (i != j && array[i][j] == 0)){
+                identity = 1;
+            } 
+
+        }
+    }
+
+
+  return identity;
 }
