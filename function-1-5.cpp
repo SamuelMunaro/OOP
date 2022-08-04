@@ -1,9 +1,23 @@
+#include <math.h>
 #include <iostream>
 
-int count_evens(int number){
-  int count = 0;
-  for (int i = 2; i <= number; i=i+2) {
-    count++;
-  }
-  return count;
+void print_summed(int array1[3][3],int array2[3][3]) {
+
+    int var = 0;
+
+    for (int i = 0; i < 3; i++) {
+
+        for (int j = 0; j < 3; j++) {
+
+            var = array1[i][j] + array2[i][j];
+
+            std::cout << var << ' ';
+
+        }
+
+        std::cout << std::endl;
+
+    }
+
+  return;
 }

@@ -1,11 +1,18 @@
 #include <iostream>
+#include <array>
+using namespace std;
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int count_evens(int);
+
+extern void print_summed(int[3][3], int[3][3]);
 
 int main() {
-  int number = 10;
-  std::cout << "The number of evens is: " << count_evens(10) << std::endl;
-  return 0;
-}
+
+    int array1[3][3] = {{1,1,1},{1,1,1},{1,1,1}};
+    int array2[3][3] = {{2,2,2},{2,2,2},{2,2,2}};
+
+    print_summed(array1, array2);
+
+    return 0;
+} 
