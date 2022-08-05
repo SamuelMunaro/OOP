@@ -11,7 +11,13 @@ void print_scaled(int array[3][3],int scale) {
 
             var = array[i][j] * scale;
 
-            std::cout << var << ' ';
+            std::cout << var;
+
+            if (j < 2) {
+
+                std:: cout << ' ';
+
+            }
 
         }
 

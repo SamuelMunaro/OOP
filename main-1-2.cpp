@@ -17,6 +17,8 @@ int main() {
 
             if (i == j) {
                 array[i][j] = 1;
+            } else {
+                array[i][j] = 0;
             }
 
         }
