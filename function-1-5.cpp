@@ -11,7 +11,13 @@ void print_summed(int array1[3][3],int array2[3][3]) {
 
             var = array1[i][j] + array2[i][j];
 
-            std::cout << var << ' ';
+            std::cout << var;
+
+            if (j < 2) {
+
+                std:: cout << ' ';
+
+            }
 
         }
 

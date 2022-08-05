@@ -9,13 +9,14 @@ int sum_diagonal(int array[10][10]) {
 
         for (int j = 0; j < 10; j++) {
 
-            if ((i == j && array[i][j] == 1) || (i != j && array[i][j] == 0)){
+            if ((i == j && array[i][j] == 1) && (i != j && array[i][j] == 0)){
                 identity = 1;
             } 
 
         }
     }
 
+    std::cout << identity << std::endl;
 
   return identity;
 }
