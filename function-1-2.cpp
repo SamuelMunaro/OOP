@@ -1,22 +1,15 @@
-#include <math.h>
 #include <iostream>
-
-int sum_diagonal(int array[10][10]) {
-
-    int identity = 1;
-    
-    for (int i = 0; i < 10; i++) {
-
-        for (int j = 0; j < 10; j++) {
-
-            if (!(i == j && array[i][j] == 1) && !(i != j && array[i][j] == 0)){
-                identity = 0;
-            } 
-
+using namespace std;
+int sum_diagonal(int a[10][10]){
+    for (int row = 0; row < 10; row++){
+        for (int col = 0; col < 10; col++){
+            if(row == col && a[row][col] != 1){
+            return 0;
+            }
+            else if(row != col && a[row][col] != 0){;
+            return 0;
+            }
         }
     }
-
-    std::cout << identity << std::endl;
-
-  return identity;
+    return 1;
 }

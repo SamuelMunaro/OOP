@@ -16,7 +16,7 @@ void print_binary_str(string decimal_number) {
       mag++;
     }
   }
-    cout<< mag<<endl;
+
   for (int i = 0; i < mag; i++) {
     if (current % 2 == 0) {
       current = current / 2;
@@ -31,9 +31,10 @@ void print_binary_str(string decimal_number) {
   
     
     for (int i = 1; i < mag+1; i++) {
-        printf("%d", base2[mag+1 - i]);
+        printf("%d", base2[mag - i]);
     }
     
+    std::cout << std::endl;
 
   return;
 }
