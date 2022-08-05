@@ -7,7 +7,7 @@ void print_binary_str(string decimal_number) {
   int number = stoi(decimal_number);
 
   // int base10 = 12345;
-  int base2[] = {};
+  int base2[9] = {};
   int current = number;
   int mag = 0;
 
@@ -16,7 +16,7 @@ void print_binary_str(string decimal_number) {
       mag++;
     }
   }
-
+    cout<< mag<<endl;
   for (int i = 0; i < mag; i++) {
     if (current % 2 == 0) {
       current = current / 2;
@@ -28,11 +28,12 @@ void print_binary_str(string decimal_number) {
       base2[i] = 1;
     }
   }
-
+  
+    
     for (int i = 1; i < mag+1; i++) {
-        printf("%d\n", base2[mag - i]);
+        printf("%d", base2[mag+1 - i]);
     }
-
+    
 
   return;
 }

@@ -10,7 +10,7 @@ extern void print_binary_str(string);
 
 int main() {
 
-    string number = "123";
+    string number = "135";
 
     print_binary_str(number);
 
