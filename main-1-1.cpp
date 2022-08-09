@@ -1,11 +1,13 @@
 #include <iostream>
+#include <string>
 
-// The `extern` keyword tells the compiler that the count function exists,
-// but will be implemented somewhere else
-extern int array_sum(int[], int);
+extern void printer(int array[10][10]);
 
 int main() {
-  int array[5] = {4, 5, 6, 7, 8};
-  std::cout << "The sum is: " << array_sum(array, 5) << std::endl;
-  return 0;
+
+    int array[10][10] = {{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0},{1,2,3,4,5,6,7,8,9,0}};
+
+    printer(array);
+
+    return 0;
 }
