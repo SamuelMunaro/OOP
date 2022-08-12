@@ -4,8 +4,8 @@ extern int palindrome_sum(int integers[], int length);
 
 int main() {
 
-    int integers[4] = {1,2,2,1};
-    int length = 4;
+    int integers[5] = {1,2,3,2,1};
+    int length = 5;
 
     //std::cout << palindrome_sum(integers, length) << std::endl;
 
