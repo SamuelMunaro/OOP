@@ -1,11 +1,16 @@
+#include <math.h>
 #include <iostream>
 
-// The `extern` keyword tells the compiler that the count function exists,
-// but will be implemented somewhere else
-extern int max_element(int[], int);
+extern int bin_to_int(int binary_digits[], int number_of_digits);
 
 int main() {
-  int array[5] = {5, 2, 3, 8, 5};
-  std::cout << "The smallest vallue in the array is: " << max_element(array, 5) << std::endl;
-  return 0;
+
+int binary_digits[8] = {1,0,1,0,1,0,1,0};
+// base2 = 5
+int number_of_digits = 8;
+
+
+std::cout << bin_to_int(binary_digits, number_of_digits) << std::endl;
+
+return 0;
 }
