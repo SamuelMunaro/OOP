@@ -8,6 +8,10 @@ void print_matrix(int array[10][10]) {
 
             std::cout << array[i][j];
 
+            if (i < 9) {
+                std::cout << ' ';
+            }
+            
         }
 
         std::cout << std::endl;
