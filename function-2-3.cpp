@@ -24,7 +24,7 @@ int palindrome_sum(int integers[], int length) {
 
     sum_integers(integers, length);
 
-    return output;
+    return sum;
 }
 
 bool is_array_palindrome(int integers[], int length) {
