@@ -1,9 +1,18 @@
+#include <math.h>
 #include <iostream>
+#include <array>
+#include <string>
 
-int array_sum(int array[], int n){
-  int sum = 0;
-  for (int i = 0; i < n; i++) {
-    sum = sum + array[i];
-  }
-  return sum;
+void string_2d_copy(std::string first[][2], std::string second[][2], int n)  {
+    
+    for (int i = 0; i < n; i++) {
+
+        for (int j = 0; j < 2; j++) {
+
+            second[i][j] = first[i][j];
+
+        }
+    }
+
+  return;
 }

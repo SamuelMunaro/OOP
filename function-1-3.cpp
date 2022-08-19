@@ -1,11 +1,15 @@
+#include <math.h>
 #include <iostream>
+#include <array>
+#include <string>
 
-int num_count(int array[], int n, int a){
-  int var = 0;
-  for (int i = 0; i < n; i++) {
-    if (array[i] == a){
-        var++;
-    }
-  }
-  return var;
+void copy_integers(int old_array[],int new_array[],int length) {
+    
+    int *val;
+    
+    val = &old_array[0];
+
+    new_array = val;
+
+    return;
 }

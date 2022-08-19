@@ -1,11 +1,19 @@
 #include <iostream>
+#include <array>
+#include <string>
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int num_count(int[], int, int);
+
+extern void copy_integers(int old_array[],int new_array[],int length) ;
 
 int main() {
-  int array[5] = {4, 5, 6, 8, 8};
-  std::cout << "The amount of desired number is: " << num_count(array, 5, 1) << std::endl;
-  return 0;
-}
+
+    int array1[5] = {5, 4, 3, 2, 1};
+    int array2[5];
+    int n = 5;
+
+    copy_integers(array1, array2, n);
+
+    return 0;
+} 
