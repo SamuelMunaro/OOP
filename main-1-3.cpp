@@ -9,7 +9,9 @@ extern void copy_integers(int old_array[],int new_array[],int length) ;
 
 int main() {
 
-    int array1[5] = {5, 4, 3, 2, 1};
+    //1 4 9 -714 12
+
+    int array1[5] = {1, 4, 9, -714, 12};
     int array2[5];
     int n = 5;
 
