@@ -1,12 +1,21 @@
 #include <iostream>
+#include <array>
+#include <string>
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int sum_two_arrays(int[], int[], int);
+
+extern void copy_integers(int old_array[],int new_array[],int length) ;
 
 int main() {
-  int array[5] = {4, 5, 6, 7, 8};
-  int secondarray[5] = {1, 2, 3, 4, 5};
-  std::cout << "The sum is: " << sum_two_arrays(array, secondarray, 5) << std::endl;
-  return 0;
-}
+
+    //1 4 9 -714 12
+
+    int array1[5] = {1, 4, 9, -714, 12};
+    int array2[5];
+    int n = 5;
+
+    copy_integers(array1, array2, n);
+
+    return 0;
+} 
