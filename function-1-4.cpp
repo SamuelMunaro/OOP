@@ -3,11 +3,11 @@
 #include <array>
 #include <string>
 
-void copy_integers(int old_array[],int new_array[],int length) {
+void copy_doubles(double *old_array,double *new_array,int length) {
     
-    int *val;
+    double *val;
     
-    val = &old_array[0];
+    val = old_array;
 
     new_array = val;
 
