@@ -43,7 +43,7 @@ std::string month_lookup(int month) {
         out =  "Dec";
         break;
         default:
-        std::cout << "invalid month" << std::endl;
+        std::cout << "invalid month";
     }
 
     return out;
