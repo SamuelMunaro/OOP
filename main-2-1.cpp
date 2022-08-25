@@ -1,11 +1,14 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-// The `extern` keyword tells the compiler that the count function exists,
-// but will be implemented somewhere else
-extern int min_element(int[], int);
+extern string month_lookup(int month);
 
 int main() {
-  int array[5] = {5, 2, 3, 8, 5};
-  std::cout << "The smallest vallue in the array is: " << min_element(array, 5) << std::endl;
-  return 0;
+
+    int month = 15;
+
+    std::cout << month_lookup(month) << std::endl;
+
+    return 0;
 }
