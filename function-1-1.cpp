@@ -10,7 +10,7 @@ void print_ascending(int *vals, int len) {
 
             out++;
 
-            std::cout << out;
+            std::cout << vals[i];
 
             if (i < out+1) {
 
