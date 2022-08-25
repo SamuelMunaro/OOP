@@ -1,9 +1,26 @@
 #include <iostream>
 
-int array_sum(int array[], int n){
-  int sum = 0;
-  for (int i = 0; i < n; i++) {
-    sum = sum + array[i];
-  }
-  return sum;
+void print_ascending(int *vals, int len) {
+
+    int out = 0;
+
+    for (int i = 0; i < len; i++) {
+
+        if (vals[i+1] > vals[i]) {
+
+            out++;
+
+            std::cout << out;
+
+            if (i < out+1) {
+
+                std:: cout << ' ';
+
+            }
+
+        }
+
+    }
+
+    return;
 }
