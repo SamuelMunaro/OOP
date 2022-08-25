@@ -22,7 +22,7 @@ void print_ascending(int *vals, int len) {
 
     }
 
-    std::endl;
+    std::cout << std::endl;
 
     return;
 }
