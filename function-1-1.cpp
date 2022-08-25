@@ -14,13 +14,15 @@ void print_ascending(int *vals, int len) {
 
             if (i < out+1) {
 
-                std:: cout << ' ';
+                std::cout << ' ';
 
             }
 
         }
 
     }
+
+    std::endl;
 
     return;
 }
