@@ -2,11 +2,11 @@
 
 void print_ascending(int *vals, int len) {
 
-    int out = 0;
+    int out = 1;
 
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len-1; i++) {
 
-        if (vals[i+1] > vals[i]) {
+        if (vals[i] < vals[i+1]) {
 
             out++;
 
