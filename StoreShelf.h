@@ -9,8 +9,7 @@ class StoreShelf
     public:
     StoreShelf();                     // default constructor
 
-    int dimension;
-    int boxWidth;
+    int size;
 
     StoreShelf(int width);            // constructor for shelf with given width in centimetres
 
