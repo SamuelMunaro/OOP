@@ -1,6 +1,7 @@
 #ifndef STORESHELF_H
 #define STORESHELF_H
 
+#include "MusicBox.h"
 #include <string>
 
 // Class definition for a StoreShelf
