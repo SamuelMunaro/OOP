@@ -7,16 +7,16 @@ using namespace std;
 // implementation of the default MusicBox constructor
 MusicBox::MusicBox()
 {
-	string song = "?";
-	int width = 0;
+	song = "?";
+	width = 0;
 	
 }
 
 // implementation of a MusicBox constructor taking its width and song
 MusicBox::MusicBox(std::string songname, int width)
 {
-	string song = songname;
-	int width = width;
+	song = songname;
+	width = width;
 	
 }
 

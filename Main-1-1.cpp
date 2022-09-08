@@ -6,8 +6,11 @@ using namespace std;
 // main program
 int main()
 {
-	MusicBox *one;
+	MusicBox *one *two;
 	one = new MusicBox("fireflys",5);
+	two = new MusicBox("disco",3);
 	one->get_song();
 	one->get_width();
+	two->get_song();
+	two->get_width();
 }
