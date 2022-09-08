@@ -6,7 +6,7 @@ using namespace std;
 // main program
 int main()
 {
-	MusicBox *one *two;
+	MusicBox *one, *two;
 	one = new MusicBox("fireflys",5);
 	two = new MusicBox("disco",3);
 	one->get_song();

@@ -20,19 +20,19 @@ MusicBox::MusicBox(std::string songname, int width)
 	
 }
 
-// implementation of the MusicBox treat function
+// implementation of the MusicBox get width
 int MusicBox::get_width()
 {
-	cout << width << endl;
+	cout << width;
 }		
 
 // implementation of the MusicBox treat function
-int MusicBox::get_song()
+string MusicBox::get_song()
 {
-	cout << song << endl;
+	cout << song;
 }	
 
-// implementation of the default Panda destructor
+// implementation of the default MusicBox destructor
 MusicBox::~MusicBox()
 {
 }
