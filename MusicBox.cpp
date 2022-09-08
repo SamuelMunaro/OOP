@@ -30,7 +30,7 @@ int MusicBox::get_width()
 string MusicBox::get_song()
 {
     return song;
-}	
+}
 
 // implementation of the default MusicBox destructor
 MusicBox::~MusicBox()
