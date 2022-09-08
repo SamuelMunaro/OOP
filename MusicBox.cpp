@@ -8,7 +8,7 @@ using namespace std;
 MusicBox::MusicBox()
 {
 	song = "?";
-	width = 0;
+	dimension = 0;
 	
 }
 
@@ -16,14 +16,14 @@ MusicBox::MusicBox()
 MusicBox::MusicBox(std::string songname, int width)
 {
 	song = songname;
-	width = width;
+	dimension = width;
 	
 }
 
 // implementation of the MusicBox get width
 int MusicBox::get_width()
 {
-	cout << width;
+	cout << dimension;
 }		
 
 // implementation of the MusicBox treat function
