@@ -23,13 +23,13 @@ MusicBox::MusicBox(std::string songname, int width)
 // implementation of the MusicBox get width
 int MusicBox::get_width()
 {
-	cout << dimension << endl;
+	dimension;
 }		
 
 // implementation of the MusicBox treat function
 string MusicBox::get_song()
 {
-	cout << song << endl;
+	song;
 }	
 
 // implementation of the default MusicBox destructor
