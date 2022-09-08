@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
 	MusicBox *one;
-	one = new Panda("fireflys",5);
-	one->treat(3);
+	one = new MusicBox("fireflys",5);
+	one->get_song();
+	one->get_width();
 }

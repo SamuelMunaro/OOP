@@ -6,8 +6,8 @@ using namespace std;
 // implementation of the default MusicBox constructor
 MusicBox::MusicBox()
 {
-	song = "?";
-	width = 0;
+	int song = "?";
+	int width = 0;
 	
 }
 
