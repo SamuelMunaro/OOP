@@ -22,12 +22,16 @@ MusicBox::MusicBox(std::string songname, int width)
 // implementation of the MusicBox treat function
 int MusicBox::get_width()
 {
-	cout << "Hi, I'm " << name << " and I'm a " << species ;
-	cout << ", munching " << fav_food_quantity << " tons of " ;
-	cout << fav_food << ", my favorite food!" << endl;
+	cout << width << endl;
 }		
 
+// implementation of the MusicBox treat function
+int MusicBox::get_song()
+{
+	cout << song << endl;
+}	
+
 // implementation of the default Panda destructor
-Panda::~Panda()
+MusicBox::~MusicBox()
 {
 }
