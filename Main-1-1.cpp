@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	MusicBox *one, *two;
-	one = new MusicBox("fireflys",5);
+	one = new MusicBox("fireflys",7);
 	two = new MusicBox("disco",3);
 	one->get_song();
 	one->get_width();
