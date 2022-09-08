@@ -9,6 +9,6 @@ int main()
 {
 	StoreShelf *one;
 	one = new StoreShelf(30);
-	int get_width();
-    int get_num_music_boxes(); 
+	one->get_width();
+    one->get_num_music_boxes(); 
 }
